@@ -22,6 +22,7 @@ press 'q'
 
 ## Todo
 - docker
+- automatic image size adjustment
 - other medias
 - network connections
 
@@ -31,4 +32,5 @@ press 'q'
 - g++ (>=c++11)
   - pthread
   - vector
+  - ncurses
 - Mac OS(I am developing this using Mac)
