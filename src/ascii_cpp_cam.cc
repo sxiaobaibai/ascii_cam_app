@@ -3,8 +3,6 @@
 #include <ncurses.h>
 #include <unistd.h>
 
-const int kQuantie = 255 / 8 + 1;
-
 const char *pixel_val = "   :-=+#%@";
 std::string ascii_pixel;
 
@@ -58,7 +56,6 @@ void AsciiCppCam::draw_ascii()
   cap.read(frame);
   height = frame.rows;
   width = frame.cols;
-  frame_.resize(height, width);
 
   set_proper_camera_size(height, width, term_height, term_width);//height, width will be updated by this function. the aspect will be kept and the image will be resized so that the image size will be smaller than the size of the terminal
   height_scale = height / static_cast<double>(frame.rows);
@@ -111,8 +108,8 @@ void AsciiCppCam::recieve_cmd()
 void AsciiCppCam::start_app()
 {
   initscr();
-  noecho(); //キーが入力されても表示しない
-  curs_set(0);//カーソルを非表示
+  noecho();
+  curs_set(0);
   threads_.push_back(std::thread([&](){draw_ascii();}));
   threads_.push_back(std::thread([&](){recieve_cmd();}));
   for (auto &th: threads_)
