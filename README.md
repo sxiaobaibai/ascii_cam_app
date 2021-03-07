@@ -15,8 +15,9 @@ $ make
 ```
 
 - start the camera
+```
 $ ./ascii_cpp_cam
-
+```
 - quit the camera
 press 'q'
 
