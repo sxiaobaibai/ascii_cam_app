@@ -4,7 +4,7 @@ This is a camera application using terminal to show the frame(Ascii camera).
 It is recommended to use in a splitted terminal window.
 
 ## demo
-![Demo](assets/demo.git)
+![Demo](https://github.com/sxiaobaibai/ascii_cam_app/blob/master/assets/demo.gif?raw=true)
 ## Start
 - build the project
 ```
