@@ -31,4 +31,4 @@ press 'q'
 - g++ (>=c++11)
   - pthread
   - vector
-- MaC OS(I am developing this using Mac)
+- Mac OS(I am developing this using Mac)
