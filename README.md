@@ -1,6 +1,7 @@
 # ascii_cam_app
 
 This is a camera application using terminal to show the frame(Ascii camera).
+It is recommended to use in a splitted terminal window.
 ## Start
 - build the project
 ```
