@@ -2,6 +2,9 @@
 
 This is a camera application using terminal to show the frame(Ascii camera).
 It is recommended to use in a splitted terminal window.
+
+## demo
+![Demo](/assets/demo.git)
 ## Start
 - build the project
 ```
